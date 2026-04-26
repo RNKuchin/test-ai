@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Proholod72 - Ремонт холодильного оборудования в Тюмени', description = 'Профессиональный ремонт и обслуживание холодильного оборудования. Быстрый выезд, гарантия, работа с юрлицами.' } = Astro.props;
+---
+
+<BaseLayout>
+  <main>
+    <slot />
+  </main>
+  
+  <!-- Sticky Mobile Bottom Bar -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg md:hidden z-50">
+    <div class="flex divide-x divide-gray-200">
+      <a href="tel:+79829251919" class="flex-1 py-3 text-center text-[var(--primary)] font-semibold hover:bg-gray-50 transition-colors">
+        📞 Позвонить
+      </a>
+      <a href="https://wa.me/79829251919" class="flex-1 py-3 text-center text-[#25D366] font-semibold hover:bg-gray-50 transition-colors">
+        💬 WhatsApp
+      </a>
+    </div>
+  </div>
+</BaseLayout>

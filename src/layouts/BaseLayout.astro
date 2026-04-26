@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Профессиональный ремонт и обслуживание холодильного оборудования в Тюмени. Выезд в день обращения. Гарантия на работы." />
+    <meta name="keywords" content="ремонт холодильников Тюмень, обслуживание холодильного оборудования, ремонт кондиционеров, Proholod72, Boreal Klimat" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://proholod72.ru/" />
+    <meta property="og:title" content="Proholod72 - Ремонт холодильного оборудования в Тюмени" />
+    <meta property="og:description" content="Профессиональный ремонт и обслуживание холодильного оборудования. Быстрый выезд, гарантия, работа с юрлицами." />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Proholod72 - Ремонт холодильного оборудования" />
+    <meta name="twitter:description" content="Быстрый и качественный ремонт холодильного оборудования в Тюмени" />
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    
+    <title>Proholod72 - Ремонт холодильного оборудования в Тюмени</title>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Proholod72",
+        "alternateName": "Boreal Klimat",
+        "url": "https://proholod72.ru",
+        "telephone": "+79829251919",
+        "email": "prholod72@mail.ru",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Тюменская область",
+          "addressCountry": "RU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "57.1522",
+          "longitude": "65.5272"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        "priceRange": "₽₽",
+        "areaServed": {
+          "@type": "City",
+          "name": "Тюмень"
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <slot />
+    
+    <!-- Yandex.Metrika counter (placeholder) -->
+    <script type="text/javascript">
+      // Метрика будет добавлена после получения счётчика
+      console.log('Yandex.Metrika placeholder');
+    </script>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
